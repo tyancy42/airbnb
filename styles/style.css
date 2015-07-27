@@ -53,7 +53,7 @@ header {
     left: 570px;
     top: 25px;
 }
-.sign-up button {
+.sign-up a {
     position: relative;
     color: white;
     left: 220px;
@@ -63,8 +63,12 @@ header {
     width: 130px;
     background-color: teal;
     border: 0;
+    text-decoration: none;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 14px;
 }
-.sign-up button:hover {
+.sign-up a:hover {
     background-color: #004f58;
 }
 .header-body {
@@ -85,15 +89,17 @@ header {
     font-size: 18px;
     color: white;
 }
-.header-body button {
+.header-body a {
     border-radius: 5px;
-    margin-top: 20px;
-    height: 40px;
-    width: 150px;
     color: white;
     background-color: rgba(200,200,200,0.5);
+    padding: 12px;
+    text-decoration: none;
+    top: 30px;
+    position: relative;
+    font-weight: bold;
 }
-.header-body button:hover {
+.header-body a:hover {
     background-color: rgba(0,0,0,0.5);
 }
 .header-bottom {
@@ -180,12 +186,13 @@ header {
 .locations {
     width: 1020px;
     margin-top: 30px;
+    font-size: 0;
 }
 .location-small ,.location-large{
     background-image: url("../images/location.jpg");
     background-size: cover;
     height: 344px;
-    width: 30.784%;
+    width: 30.728%;
     display: inline-block;
     margin: 10px;
     position: relative;
@@ -199,7 +206,7 @@ header {
     font-weight: bold;
     text-align: center;
 }
-.location-small img {
+.location-face img {
     display: block;
     border-radius: 50%;
     border: 2px solid white;
@@ -208,6 +215,17 @@ header {
     top: 80px;
     height: 48px;
     width: 48px;
+}
+.price-tag {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background-color: rgba(50,50,50,0.5)
+}
+.price-tag p {
+    top: 0;
+    font-size: 18px;
+    padding: 10px;
 }
 .see-more {
     margin: 60px auto 0 auto;
@@ -220,7 +238,6 @@ header {
     background-color: white;
     border-radius: 2px;
 }
-
 .see-more-button p {
     padding-top: 13px;
     font-weight: bold;
@@ -231,7 +248,7 @@ header {
     border: 1px solid black;
 }
 .location-large {
-    width: 64.2%;
+    width: 63.5%;
 }
 .slide {
     margin-top: 50px;
@@ -362,6 +379,13 @@ footer {
     list-style: none;
     line-height: 1.43;
     font-size: 14px;
+}
+.footer-list a {
+    text-decoration: none;
+    color: white;
+}
+.footer-list a:hover {
+    color: grey;
 }
 .footer-social {
     text-align: center;
