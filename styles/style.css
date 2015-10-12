@@ -1,5 +1,4 @@
 html, body {
-    max-width: 100%;
     overflow-x: hidden;
     background-color: #edefed;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -25,6 +24,7 @@ header {
     background-size: cover;
     width: 100%;
     height: 600px;
+    overflow-x: hidden;
 }
 
 .header-top {
@@ -44,13 +44,12 @@ header {
 .header-top .header-top-right {
     float: right;
     color: white;
-    height: 75px;
-    width: 50%;
+    width: 85%;
     display: inline-block;
 }
 .sign-up {
     position: relative;
-    left: 570px;
+    left: 60%;
     top: 25px;
 }
 .sign-up a {
@@ -112,7 +111,6 @@ header {
 .searchbar {
     padding-top: 30px;
     height: 60px;
-    vertical-align: center;
     width: 100%;
     text-align: center;
 }
@@ -145,17 +143,17 @@ header {
 .video-container-top {
     margin-left: auto;
     margin-right: auto;
-    vertical-align: center;
     width: 1020px;
     height: 344px;
     text-align: center;
 }
 
 .video {
-    background-image: url("../images/video-top-background.jpg");
-    background-size: cover;
+    /*background-image: url("../images/video-top-background.jpg");
+    background-size: cover;*/
     height: 344px;
-    width: 1020px;
+    width: 768px;
+    margin: 0 auto;
 }
 .video p {
     font-size: 60px;
@@ -270,6 +268,7 @@ header {
     width: 100px;
     height: 100px;
 }
+
 .community-container {
     width: 1400px;
     height: 650px;
@@ -318,96 +317,225 @@ header {
 }
 /*.community-card-mid {
     height: 290px;
-}*/
-.community-card-bot {
-    position: absolute;
-    bottom: 0;
-    line-height: 1.3;
-    padding: 40px 20px;
-}
-.green {
-    background-color: #8ce071;
-}
+    }*/
+    .community-card-bot {
+        position: absolute;
+        bottom: 0;
+        line-height: 1.3;
+        padding: 40px 20px;
+    }
+    .green {
+        background-color: #8ce071;
+    }
 
-footer {
-    margin-top: 20px;
-    width: 100%;
-    height: 428.5px;
-    color: white;
-    padding-top: 50px;
-    background-image: url("../images/footer-background.jpg");
-}
-.footer-content {
-    width: 1007px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.footer-selectors {
-    margin-top: 30px;
-    width: 25%;
-    margin-left: 8.3333%;
-    float: left;
-}
-.footer-nav {
-    padding-bottom: 50px;
-    border-bottom: 1px solid grey;
-}
-.footer-nav select {
-    background-color: #565a5c;
-    color: white;
-    width: 100%;
-    border: 0;
-    padding: 10px 0 10px 0;
-    margin-bottom: 12.5px;
-    padding-left: 10px;
-    border-radius: 2px;
-}
-.footer-company, .footer-discover, .footer-hosting {
-    display: inline-block;
-    width: 16.6666%;
-}
-.footer-company h5, .footer-discover h5, .footer-hosting h5 {
-    margin-bottom: 15px;
-    line-height: 1.1;
-    font-size: 16px;
-}
-.footer-company {
-    margin-left: 8.3333%;
- }
-.footer-list {
-    float: left;
-    list-style: none;
-    line-height: 1.43;
-    font-size: 14px;
-}
-.footer-list a {
-    text-decoration: none;
-    color: white;
-}
-.footer-list a:hover {
-    color: grey;
-}
-.footer-social {
-    text-align: center;
-}
-.footer-social h5 {
-    margin: 25px 0;
-}
-.footer-social ul {
-    list-style: none;
-}
-.footer-social li {
-    display: inline;
-}
-.social-list li a {
-    color: black;
-    text-decoration: none;
-    font-size: 32px;
-}
-.social-list li a:hover {
-    color: #565a5c;
-}
-.copyright {
-    color: grey;
-    margin-top: 15px;
-}
+    footer {
+        margin-top: 20px;
+        width: 100%;
+        height: 428.5px;
+        color: white;
+        padding-top: 50px;
+        background-image: url("../images/footer-background.jpg");
+    }
+    .footer-content {
+        width: 1007px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-selectors {
+        margin-top: 30px;
+        width: 25%;
+        margin-left: 8.3333%;
+        float: left;
+    }
+    .footer-nav {
+        padding-bottom: 50px;
+        border-bottom: 1px solid grey;
+    }
+    .footer-nav select {
+        background-color: #565a5c;
+        color: white;
+        width: 100%;
+        border: 0;
+        padding: 10px 0 10px 0;
+        margin-bottom: 12.5px;
+        padding-left: 10px;
+        border-radius: 2px;
+    }
+    .footer-company, .footer-discover, .footer-hosting {
+        display: inline-block;
+        width: 16.6666%;
+    }
+    .footer-company h5, .footer-discover h5, .footer-hosting h5 {
+        margin-bottom: 15px;
+        line-height: 1.1;
+        font-size: 16px;
+    }
+    .footer-company {
+        margin-left: 8.3333%;
+    }
+    .footer-list {
+        float: left;
+        list-style: none;
+        line-height: 1.43;
+        font-size: 14px;
+    }
+    .footer-list a {
+        text-decoration: none;
+        color: white;
+    }
+    .footer-list a:hover {
+        color: grey;
+    }
+    .footer-social {
+        text-align: center;
+    }
+    .footer-social h5 {
+        margin: 25px 0;
+    }
+    .footer-social ul {
+        list-style: none;
+    }
+    .footer-social li {
+        display: inline;
+    }
+    .social-list li a {
+        color: black;
+        text-decoration: none;
+        font-size: 32px;
+    }
+    .social-list li a:hover {
+        color: #565a5c;
+    }
+    .copyright {
+        color: grey;
+        margin-top: 15px;
+    }
+
+    @media screen and (max-width: 1368px) {
+        .community-container {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1020px) {
+        .video-container-top, .video, .content-section, .locations, .footer-content, .footer-nav {
+            width: 100%;
+        }
+        .location-small {
+            width: 33.5%;
+            margin: 15px;
+        }
+        .location-small {
+            width: 30%;
+            margin: 10px;
+        }
+        .user-home {
+            display: none;
+        }
+        .location-large {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+        }
+        #location-item-1 {
+            margin-left: 3%;
+        }
+        .header-top .header-top-right {
+            width: 60%;
+        }
+        .sign-up {
+            left: 30%;
+        }
+    }
+
+    @media screen and (max-width: 974px) {
+        .searchbar button {
+            position: relative;
+            left: 15px;
+            height: 30px;
+
+        }
+        .community-card:nth-child(2) {
+            display: none;
+        }
+        .community-card {
+            width: 29%;
+        }
+    }
+
+    @media screen and (max-width: 890px) {
+        .searchbar-checkin, .searchbar-checkout, #guests{
+            display: none;
+        }
+
+        .searchbar button {
+            left: 0;
+            height: 44px;
+        }
+        .general {
+            display: none;
+        }
+        .city {
+            width: 33.8%;
+        }
+        .city-1, .city-2 {
+            margin-left: 15%;
+        }
+        .header-top .header-top-right {
+            width: 60%;
+        }
+        .sign-up {
+            left: 20%;
+        }
+
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .slide, .main-top, .community-container, .footer-discover, .company-hide, .company-hide a, .footer-hosting, .footer-company h5, .footer-social h5  {
+            display: none;
+        }
+        .social-list {
+            margin-top: 10px;
+        }
+        .footer-list > .company-hide {
+            padding-right: 0;
+        }
+        .footer-company {
+            margin-top: 30px;
+            margin-left: 25%;
+            text-align: center;
+            width: 50%;
+        }
+        .footer-list li{
+            display: inline-block;
+            padding-right: 10px;
+            text-align: center;
+        }
+        .footer-list li:last-child {
+            margin-left: -10px;
+        }
+        .location-small, .location-large, #location-item-1 {
+            width: 100%;
+            margin: 0;
+        }
+        .footer-nav {
+            margin-left: 5%;
+        }
+        .footer-selectors {
+            width: 90%;
+            margin: 0;
+        }
+        .header-top .header-top-right {
+            width: 50%;
+        }
+        .sign-up {
+            left: 0;
+        }
+    }
+
+    @media screen and (max-width: 510px) {
+        .searchbar button {
+            height: 30px;
+        }
+    }
